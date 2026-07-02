@@ -1,41 +1,26 @@
+:root {
+  --main-green: #2d5a27;
+  --bg-color: #f4f7f1;
+  --text-color: #333;
+}
+
 body {
-    background-color: #e8ede0; /* Màu nền nhạt */
-    font-family: Arial, sans-serif;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
 }
 
-.container {
-    max-width: 600px;
-    text-align: center;
-}
+header { background-color: #fff; padding: 20px; }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Tạo hình tròn */
-    object-fit: cover;
-    border: 5px solid white;
-}
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
 
-h1 {
-    color: #1a4d2e; /* Màu xanh đậm cho tiêu đề */
-}
+nav a { text-decoration: none; color: var(--main-green); font-weight: bold; }
 
-.card {
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Hiệu ứng nổi */
-    text-align: left;
-    line-height: 1.6;
-}
+h1 { color: var(--main-green); }
 
-a {
-    color: #2a7d45;
-    text-decoration: none;
-    font-weight: bold;
-}
+.gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+
+footer { margin-top: 40px; font-size: 0.8rem; color: #777; }
